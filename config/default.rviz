@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Table Top1/Status1
       Splitter Ratio: 0.5
     Tree Height: 707
   - Class: rviz/Selection
@@ -199,6 +198,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        panda_volume:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         table:
           Alpha: 1
           Show Axes: false
@@ -256,162 +260,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          behind_table_collider:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_front:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          falcon_grip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_volume:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          panda_leftfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link0_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link1_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link3_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link5_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link6_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link7_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          panda_mounting_plate:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_rightfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          table:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          table_top:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wall:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          window_collider:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -458,162 +306,6 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          behind_table_collider:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_front:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          falcon_grip:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          falcon_volume:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_hand_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          panda_leftfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link0:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link0_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link1:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link1_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link3:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link3_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link5:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link5_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link6_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link7:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link7_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_link8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          panda_mounting_plate:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          panda_rightfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          table:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          table_top:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          wall:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          window_collider:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -635,6 +327,15 @@ Visualization Manager:
       Name: Table Top
       Radius: 0.009999999776482582
       Reference Frame: table_top
+      Show Trail: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.10000000149011612
+      Name: Panda Volume
+      Radius: 0.009999999776482582
+      Reference Frame: panda_volume
       Show Trail: false
       Value: true
   Enabled: true
@@ -681,9 +382,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.05979681387543678
+      Pitch: 0.48979660868644714
       Target Frame: <Fixed Frame>
-      Yaw: 1.1953849792480469
+      Yaw: 0.5503854751586914
     Saved: ~
 Window Geometry:
   Displays:

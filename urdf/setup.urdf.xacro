@@ -18,9 +18,42 @@
         </material>
     </visual>
   </link>
-  <joint name="falcon_box_to_base" type="fixed">
+  <joint name="falcon_volume_to_base" type="fixed">
     <parent link="falcon_front"/>
     <child link="falcon_volume"/>
-    <origin xyz="0.12 0.0 0.0" rpy="${tau/2} ${-tau/4} ${tau/4}"/>
+    <origin xyz="0 0.0 0.12" rpy="${tau/2} ${-tau/4} ${tau/4}"/>
   </joint>
+
+  <link name='panda_volume'>
+    <visual>
+        <geometry>
+            <box size="0.1 0.1 0.1"/>        
+        </geometry>
+        <material name="blue_vol">
+            <color rgba="0.0 0.0 1.0 0.1"/>    
+        </material>
+    </visual>
+  </link>
+  <joint name="panda_volume_to_hand" type="fixed">
+    <parent link="panda_hand_tcp"/>
+    <child link="panda_volume"/>
+    <origin xyz="0.0 0.0 0.0" rpy="${tau/2} 0 0"/>
+  </joint>
+
+  <link name='panda_table_volume'>
+    <visual>
+        <geometry>
+            <box size="0.1 0.1 0.1"/>        
+        </geometry>
+        <material name="blue_vol">
+            <color rgba="0.0 0.0 1.0 0.1"/>    
+        </material>
+    </visual>
+  </link>
+  <joint name="panda_volume_to_table" type="fixed">
+    <parent link="table_top"/>
+    <child link="panda_table_volume"/>
+    <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
+  </joint>
+
 </robot>
