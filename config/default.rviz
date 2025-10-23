@@ -198,7 +198,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        panda_volume:
+        panda_table_volume:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -324,19 +324,35 @@ Visualization Manager:
       Class: rviz/Axes
       Enabled: true
       Length: 0.10000000149011612
-      Name: Table Top
+      Name: Table Volume
       Radius: 0.009999999776482582
-      Reference Frame: table_top
+      Reference Frame: panda_table_volume
       Show Trail: false
       Value: true
     - Alpha: 1
       Class: rviz/Axes
       Enabled: true
       Length: 0.10000000149011612
-      Name: Panda Volume
+      Name: TCP
       Radius: 0.009999999776482582
-      Reference Frame: panda_volume
+      Reference Frame: panda_hand_tcp
       Show Trail: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0.009999999776482582
+      Axes Radius: 0.009999999776482582
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.009999999776482582
+      Head Radius: 0.009999999776482582
+      Name: Mapped Point
+      Queue Size: 10
+      Shaft Length: 0.009999999776482582
+      Shaft Radius: 0.009999999776482582
+      Shape: Axes
+      Topic: /mapped_falcon_target
+      Unreliable: false
       Value: true
   Enabled: true
   Global Options:
@@ -366,7 +382,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.0481650829315186
+      Distance: 1.8305437564849854
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -374,17 +390,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.021264249458909035
-        Y: -0.1281132698059082
-        Z: 0.30558234453201294
+        X: -0.029635172337293625
+        Y: 0.010548505000770092
+        Z: 0.07943275570869446
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.48979660868644714
+      Pitch: 0.3397955894470215
       Target Frame: <Fixed Frame>
-      Yaw: 0.5503854751586914
+      Yaw: 0.04038598760962486
     Saved: ~
 Window Geometry:
   Displays:
