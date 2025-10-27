@@ -85,6 +85,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        falcon_volume_flipped:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         panda_hand:
           Alpha: 1
           Show Axes: false
@@ -339,19 +344,14 @@ Visualization Manager:
       Show Trail: false
       Value: true
     - Alpha: 1
-      Axes Length: 0.009999999776482582
-      Axes Radius: 0.009999999776482582
-      Class: rviz/Pose
-      Color: 255; 25; 0
+      Class: rviz/PointStamped
+      Color: 204; 41; 204
       Enabled: true
-      Head Length: 0.009999999776482582
-      Head Radius: 0.009999999776482582
-      Name: Mapped Point
+      History Length: 1
+      Name: PointStamped
       Queue Size: 10
-      Shaft Length: 0.009999999776482582
-      Shaft Radius: 0.009999999776482582
-      Shape: Axes
-      Topic: /mapped_falcon_target
+      Radius: 0.009999999776482582
+      Topic: /mapped_falcon_target_visual
       Unreliable: false
       Value: true
   Enabled: true
@@ -398,9 +398,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3397955894470215
+      Pitch: 0.2497951090335846
       Target Frame: <Fixed Frame>
-      Yaw: 0.04038598760962486
+      Yaw: 0.11038591712713242
     Saved: ~
 Window Geometry:
   Displays:

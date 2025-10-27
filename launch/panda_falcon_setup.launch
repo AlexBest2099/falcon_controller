@@ -11,4 +11,11 @@
     <node name="falcon_grip_state" pkg="falcon_ros" type="grip_state"/>
 
     <param name="robot_description" command="xacro $(dirname)/../urdf/setup.urdf.xacro" />
+    
+    <node name="panda_moveit" pkg="falcon_controller" type="panda_moveit.py" output="screen"/>
+    <node name="panda_mapped" pkg="falcon_controller" type="panda_mapped.py" output="screen"/>
+    <node name="volume_node" pkg="falcon_controller" type="volume_node.py" output="screen"/>
+    
+    
+    
 </launch>
