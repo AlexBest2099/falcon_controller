@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="complete" default="false"/>
+
+    <include if="$(arg complete)" file="$(dirname)/prerequisites.launch" />
+    
+    <node name="panda_moveit" pkg="falcon_controller" type="panda_moveit.py" output="screen"/>
+    <node name="panda_mapped" pkg="falcon_controller" type="panda_mapped.py" output="screen"/>
+</launch>

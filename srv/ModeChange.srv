@@ -1,3 +1,4 @@
-std_msgs/Float32[] orientation
+geometry_msgs/PoseStamped origin
+geometry_msgs/Vector3 extends
 ---
-std_msgs/Bool success
+bool success

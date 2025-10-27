@@ -21,7 +21,7 @@ class VolumeNode():
         )
 
     def srv_cb(self,request):
-        succes=Bool()
+        success=Bool()
         try:
             self.publish_static_box(
                 parent="falcon_front",
@@ -29,10 +29,10 @@ class VolumeNode():
                 x=0.0, y=0.0, z=0.12,
                 roll=request.orientation[0].data, pitch=request.orientation[1].data, yaw=request.orientation[2].data
             )
-            succes.data=True
+            success.data=True
         except:
-            succes.data=False
-        return ModeChangeResponse(succes)
+            success.data=False
+        return ModeChangeResponse(success)
 
 
     def publish_static_box(self, parent, child, x, y, z, roll, pitch, yaw):
