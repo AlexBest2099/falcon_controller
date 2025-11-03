@@ -105,7 +105,6 @@ class Mapper:
             m.color.a=0.3
             self.marker_pub.publish(m)
             success=True 
-
         except:
             success=False
         return ModeChangeResponse(success)

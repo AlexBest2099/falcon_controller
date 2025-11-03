@@ -7,11 +7,13 @@ from geometry_msgs.msg import PointStamped
 class MovePanda:
     def __init__(self) -> None:
         rospy.init_node("falcon_moveit")
-        self.pos_sub = rospy.Subscriber("panda_target", PointStamped, self.move_cb, queue_size=1)
         self.commander = moveit_commander.MoveGroupCommander("arm")
+        self.commander._g.start_state_monitor(1.0)
+        self.pos_sub = rospy.Subscriber("panda_target", PointStamped, self.move_cb, queue_size=1)
     
     def move_cb(self,msg):
         pose=PoseStamped()
+        
         pose.pose.orientation.x=1
         pose.pose.orientation.y=0
         pose.pose.orientation.z=0
@@ -20,6 +22,7 @@ class MovePanda:
         pose.pose.position.y=msg.point.y
         pose.pose.position.z=msg.point.z
         pose.header.frame_id=msg.header.frame_id
+        pose.header.stamp=rospy.Time.now()
         self.go_to_pos_once(target_positions=pose)
         rospy.loginfo("Command sent to panda")
 
