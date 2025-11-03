@@ -22,7 +22,7 @@ class MovePanda:
         pose.pose.orientation.y=0
         pose.pose.orientation.z=0
         pose.pose.orientation.w=0
-        pose.header.frame_id="falcon_volume"
+        pose.header.frame_id="table_top"
         pose=self.tf_buffer.transform(
                 pose,"table_volume",rospy.Duration(0.1)
             )
