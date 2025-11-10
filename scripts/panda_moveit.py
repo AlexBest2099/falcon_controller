@@ -14,6 +14,7 @@ class MovePanda:
         self.tf_buffer = tf2_ros.Buffer()
         self.listener = tf2_ros.TransformListener(self.tf_buffer)
         self.pos_sub = rospy.Subscriber("panda_target", PointStamped, self.move_cb, queue_size=1)
+        self.commander.set_end_effector_link("pen")
 
     def move_cb(self,msg):
         pose=PoseStamped()
@@ -26,7 +27,7 @@ class MovePanda:
         pose=self.tf_buffer.transform(
                 pose,"table_volume",rospy.Duration(0.1)
             )
-
+        
         pose.pose.position.x=msg.point.x
         pose.pose.position.y=msg.point.y
         pose.pose.position.z=msg.point.z

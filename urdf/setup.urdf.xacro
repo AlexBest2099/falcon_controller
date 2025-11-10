@@ -9,10 +9,10 @@
     <origin xyz="0 0.8 0.13" rpy="${tau/4} 0 ${tau/4}"/>
   </joint>
 
-  <link name='falcon_volume'>
+  <!-- <link name='falcon_volume'>
     <visual>
         <geometry>
-            <box size="0.08 0.1 0.1"/>        
+            <box size="0.08 0.1 0.05"/>        
         </geometry>
         <material name="blue_vol">
             <color rgba="0.0 0.0 1.0 0.1"/>    
@@ -23,7 +23,7 @@
     <parent link="falcon_front"/>
     <child link="falcon_volume"/>
     <origin xyz="0 0.0 0.12" rpy="${tau/2} ${-tau/4} ${tau/4}"/>
-  </joint>
+  </joint> -->
 
   <!-- <link name='panda_volume'>
     <visual>
@@ -47,6 +47,12 @@
     <child link="table_volume"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
+  <!-- <link name='falcon_volume' />
+  <joint name="panda_volume_to_table_top" type="floating">
+    <parent link="table_top"/>
+    <child link="table_volume"/>
+    <origin xyz="0 0 0" rpy="${tau/2} ${-tau/4} ${tau/4}"/>
+  </joint> -->
 
   <!-- <link name='panda_table_volume'>
     <visual>
@@ -79,6 +85,30 @@
     <child link="falcon_volume_flipped"/>
     <origin xyz="0 0.0 0.12" rpy="${tau/2} ${-tau/2} ${tau/4}"/>
   </joint> -->
+
+<link name="pen">
+  <visual>
+    <origin xyz="0 0 -0.0635" rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.01" length="0.127"/>
+    </geometry>
+    <material name="pen_rad">
+      <color rgba="0.0 1.0 0.0 0.5"/>
+    </material>
+  </visual>
+
+  <!-- <collision>
+    <origin xyz="0 0 -0.0635 " rpy="0 0 0"/>
+    <geometry>
+      <cylinder radius="0.01" length="0.127"/>
+    </geometry>
+  </collision> -->
+</link>
+<joint name="pen_joint" type="fixed">
+  <parent link="panda_hand_tcp"/>
+  <child link="pen"/>
+  <origin xyz="0 0 0.09" rpy="0 0 0"/>
+</joint>
 
 
 </robot>

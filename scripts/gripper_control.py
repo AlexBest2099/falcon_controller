@@ -3,7 +3,7 @@ import rospy
 import actionlib
 from franka_gripper.msg import GraspAction, GraspGoal, GraspEpsilon
 
-def grasp_client(width=0.04, speed=0.1, force=40.0):
+def grasp_client(width=0.04, speed=0.1, force=10.0):
     rospy.init_node("grasp_client")
 
     client = actionlib.SimpleActionClient("/franka_gripper/grasp", GraspAction)
@@ -26,6 +26,6 @@ def grasp_client(width=0.04, speed=0.1, force=40.0):
 
 if __name__ == "__main__":
     try:
-        grasp_client(width=0.001)
+        grasp_client(width=0.06)
     except rospy.ROSInterruptException:
         pass
