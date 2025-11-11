@@ -39,6 +39,7 @@ catkin_install_python(PROGRAMS
   scripts/panda_moveit.py
   scripts/panda_mapped.py
   scripts/volume_node.py
+  scripts/mode_change.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
