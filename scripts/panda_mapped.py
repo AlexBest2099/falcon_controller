@@ -24,17 +24,17 @@ class Mapper:
         self.mode_service=rospy.Service('~mode_change',ModeChange,handler=self.srv_cb)
         self.last_button_state=0
         req=ModeChangeRequest()
-        req.origin.pose.position.x=0.0
-        req.origin.pose.position.y=0.2
-        req.origin.pose.position.z=0.168
+        req.origin.pose.position.x=0.01
+        req.origin.pose.position.y=0.13
+        req.origin.pose.position.z=0.149
         req.origin.pose.orientation.w=1
         req.origin.header.frame_id='table_top'
-        req.extends.x=0.5
-        req.extends.y=0.5
+        req.extends.x=0.297
+        req.extends.y=0.42 
         req.extends.z=0.3
 
         
-        self.FALCON_VOLUME_EXTENDS= [0.043, 0.1, 0.05]
+        self.FALCON_VOLUME_EXTENDS= [0.043, 0.07, 0.045]
         self.t_falcon_volume = TransformStamped()
         self.t_falcon_volume .header.stamp = rospy.Time.now()
         self.t_falcon_volume .header.frame_id = "falcon_front"

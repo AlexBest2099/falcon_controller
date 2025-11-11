@@ -10,11 +10,11 @@ def grasp_client(width=0.04, speed=0.1, force=10.0):
     rospy.loginfo("Waiting for /franka_gripper/grasp action server...")
     client.wait_for_server()
     rospy.loginfo("Connected to /franka_gripper/grasp server.")
-
+    
     goal = GraspGoal()
-    goal.width = width  # target opening width [m]
-    goal.speed = speed  # grasping speed [m/s]
-    goal.force = force  # grasping force [N]
+    goal.width = width  
+    goal.speed = speed 
+    goal.force = force  
     goal.epsilon = GraspEpsilon(inner=0.1, outer=0.1)
 
     client.send_goal(goal)
