@@ -90,7 +90,7 @@
   <visual>
     <origin xyz="0 0 -0.0635" rpy="0 0 0"/>
     <geometry>
-      <cylinder radius="0.01" length="0.12"/>
+      <cylinder radius="0.0083" length="0.129"/>
     </geometry>
     <material name="pen_rad">
       <color rgba="0.0 1.0 0.0 0.5"/>
@@ -107,7 +107,7 @@
 <joint name="pen_joint" type="fixed">
   <parent link="panda_hand_tcp"/>
   <child link="pen"/>
-  <origin xyz="0 0 0.0935" rpy="0 0 0"/>
+  <origin xyz="0 0 0.097" rpy="0 0 0"/>
 </joint>
 
 

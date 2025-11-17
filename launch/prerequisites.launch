@@ -11,5 +11,7 @@
 
     <param name="robot_description" command="xacro $(dirname)/../urdf/setup.urdf.xacro"/>
 
+    <!-- <include file="$(find falcon_controller)/launch/mapper.launch"/> -->
     <include file="$(dirname)/rviz.launch"/>
+    
 </launch>

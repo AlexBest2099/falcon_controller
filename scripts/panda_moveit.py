@@ -50,8 +50,8 @@ class MovePanda:
         pose_in_table_top = self.tf_buffer.transform(point_stamped, "table_top", rospy.Duration(0.1))
         rospy.loginfo(str(point_stamped.point))
 
-        if pose_in_table_top.point.z <= 0.005 and not self.setup:
-            rospy.sleep(1)
+        if pose_in_table_top.point.z <= 0.0005 and not self.setup:
+            rospy.sleep(0.3)
             rospy.loginfo("Going back to center")
             # # Create a small upward move in table_volume frame
             # lift_pose = PoseStamped()
