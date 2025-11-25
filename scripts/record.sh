@@ -1,19 +1,26 @@
-#!bin/bash 
+#!/bin/bash
 
-ID=$1
-DATE=$(date +%Y-%m-%d_%H-%M-%S)
-rosbag record -O ~/ros/src/falcon_controller/bags/experiment_p${ID}_${DATE} \
+echo -n "enter participant id: "
+read participant_id
+
+condition=${1:-unknown}
+
+rosbag record -o ~/ros/src/falcon_controller/bags/experiment_participant_${participant_id}_condition_${condition} \
 /falcon/measured_cp \
 /falcon/joy \
 /falcon/grip_state \
 /joint_states \
 /franka_state_controller/franka_states \
 /position_joint_trajectory_controller/state \
-/move_group/status \
-/trajectory_execution_event \
+/move_group/goal \
+/move_group/result \
 /tf \
 /tf_static \
-/panda_target 
+/panda_target \
+/panda_mapped/marker \
+/panda_mapped/mapped_falcon_target_visual \
+/franka_state_controller/F_ext \
+/frame_pose \
 
 # First three are Teleop input topics
 

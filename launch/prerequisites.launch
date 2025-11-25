@@ -13,5 +13,10 @@
 
     <!-- <include file="$(find falcon_controller)/launch/mapper.launch"/> -->
     <include file="$(dirname)/rviz.launch"/>
+    <node name="eef_pose_publisher" pkg="falcon_controller" type="eef_pose_publisher.py">
+        <param name="target_frame" value="pen"/>
+        <param name="reference_frame" value="table_volume"/>
+    </node>
+
     
 </launch>

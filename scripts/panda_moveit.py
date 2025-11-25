@@ -54,20 +54,20 @@ class MovePanda:
             rospy.sleep(0.3)
             rospy.loginfo("Going back to center")
             # # Create a small upward move in table_volume frame
-            # lift_pose = PoseStamped()
-            # lift_pose.header.frame_id = "table_top"
-            # lift_pose.pose.orientation.x = 1
-            # lift_pose.pose.orientation.y = 0
-            # lift_pose.pose.orientation.z = 0
-            # lift_pose.pose.orientation.w = 0
-            # lift_pose.pose.position.x = pose_in_table_top.point.x
-            # lift_pose.pose.position.y = pose_in_table_top.point.y
-            # lift_pose.pose.position.z = pose_in_table_top.point.z + 0.05
+            lift_pose = PoseStamped()
+            lift_pose.header.frame_id = "table_top"
+            lift_pose.pose.orientation.x = 1
+            lift_pose.pose.orientation.y = 0
+            lift_pose.pose.orientation.z = 0
+            lift_pose.pose.orientation.w = 0
+            lift_pose.pose.position.x = pose_in_table_top.point.x
+            lift_pose.pose.position.y = pose_in_table_top.point.y
+            lift_pose.pose.position.z = pose_in_table_top.point.z + 0.03
 
             # # Transform to table_volume frame
-            # lift_pose = self.tf_buffer.transform(lift_pose, "table_volume", rospy.Duration(0.1))
-            # lift_pose.header.stamp = rospy.Time.now()
-            # self.go_to_pos_once(target_positions=lift_pose)
+            lift_pose = self.tf_buffer.transform(lift_pose, "table_volume", rospy.Duration(0.1))
+            lift_pose.header.stamp = rospy.Time.now()
+            self.go_to_pos_once(target_positions=lift_pose)
 
             # # Move to volume center
             # center_pose = PoseStamped()

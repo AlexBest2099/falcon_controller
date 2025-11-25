@@ -1,0 +1,7 @@
+{
+    "urdf-visualizer.packages": {
+      "falcon_ros": "../falcon_ros",
+      "cu_panda_description":"/opt/ros/cu/share/cu_panda_description",
+      "franka_description" :"/opt/ros/one/share/franka_description"
+  },
+}

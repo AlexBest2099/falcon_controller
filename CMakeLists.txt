@@ -41,6 +41,7 @@ catkin_install_python(PROGRAMS
   scripts/volume_node.py
   scripts/mode_change.py
   scripts/calibration.py
+  scripts/eef_pose_publisher.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
